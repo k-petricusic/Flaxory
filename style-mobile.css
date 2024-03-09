@@ -96,9 +96,10 @@ section img {
 }
 
 .overlay h1 {
-    font-size: 6vw;
+    font-size: 8vw;
     color: rgb(255, 255, 255);
-
+    position: relative;
+    bottom: 12%;
 }
 
 .overlay h2 {
@@ -108,6 +109,7 @@ section img {
     display: flex;
     justify-content: start;
     align-items: start;
+    font-size: 6vw;
 }
 
 .overlay p {
@@ -117,12 +119,12 @@ section img {
     display: flex;
     justify-content: start;
     align-items: start;
-
+    font-size: 3vw;
 }
 
 .column {
     float: left;
-    width: 50%;
+    width: 100%;
 }
 
 .row::after {
@@ -139,7 +141,7 @@ button {
     color: white;
     border-style: groove;
     right: 40%;
-    top: 20%;
+    top: 30%;
     transition-duration: 0.5s;
     width: 10%;
     height: 10%;
