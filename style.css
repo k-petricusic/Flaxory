@@ -27,7 +27,7 @@ a {
 
 nav a {
     color: white;
-    font-size: 1.1vw;
+    font-size: 20px;
     text-decoration: none;
     padding-left: 2vh;
     padding-right: 2vh;
@@ -127,15 +127,13 @@ button:hover {
 
 section h1 {
     position: relative;
-    left: 11.8%;
-    padding-top: 5.5vh;
-    
-    
+    left: 30%;
+    padding-top: 7.5vh;
 }
 
 section pre {
     position: relative;
-    left: 2%;
+    left: 25%;
     color: white;
     line-height: 1.5em;
     padding: 3vh;
