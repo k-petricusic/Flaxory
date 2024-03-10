@@ -3,11 +3,16 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <title>Flaxory Marknadsföring</title>
         <link rel="icon" href="img/mini.png" type="image/x-icon">
-    </head>
+        <script type="text/javascript">
+          if (screen.width <= 1025) {
+          document.location = "mobile.html";
+          }
+        </script>
+      </head>
     <body>
         <header>
             <a href="index.html" class="logo">
@@ -21,7 +26,7 @@
             </nav>
           </header>
         <section style="background-color: rgb(12, 12, 13);" style="position: absolute;">
-            <h1 style="font-size: 300%;">Privacy policy</h1>
+            <h1 style="font-size: 300%;" class="priv">Privacy policy</h1>
             <p>
                 <pre>
                     
@@ -87,13 +92,13 @@
                     kontakta oss på <a href="mailto:info.Flaxory@gmail.com">info.Flaxory@gmail.com</a>.</pre>
             </p>
         </section>
-    </body>
-    <footer>
-        <h3 style="font-size: 20px;">
-            Flaxory
+        <footer>
+          <h3 style="font-size: 20px;">
+              Flaxory
+          </h3>
+          <h3 style="font-size: 15px;">
+              Svensk Marknadsföring
         </h3>
-        <h3 style="font-size: 15px;">
-            Svensk Marknadsföring
-    </h3>
-    </footer>
+        </footer>
+    </body>
 </html>

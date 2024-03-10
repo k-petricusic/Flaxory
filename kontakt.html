@@ -6,6 +6,11 @@
         <link rel="stylesheet" href="style.css">
         <title>Flaxory Marknadsföring</title>
         <link rel="icon" href="img/mini.png" type="image/x-icon">
+        <script type="text/javascript">
+          if (screen.width <= 1025) {
+          document.location = "mobile.html";
+          }
+        </script>
       </head>
     <body>
         <header>
@@ -19,13 +24,41 @@
                 <a href="privacy.html">Privacy Policy</a>
             </nav>
         </header>
+        <section style="background-color: rgb(12,12,13);">
+            <h1 class="kontakt">Kontakta oss</h1>
+            <form action="">
+                <label for="name">Namn*<br>
+                    <input type="text" id="name" name="name" placeholder="Skriv ditt namn här..." required>
+                </label><br>
+                <label for="adress">Adress <br>
+                    <input type="text" id="adress" adress="adress" placeholder="Fyll i din adress..."><br>
+                </label>
+                <table>
+                    <tr>
+                        <td><label for="epost" class="side">E-post*</label></td>
+                        <td><label for="nummer" class="side">Telefonnummer</label></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="epost" epost="epost" class="side" required></td>
+                        <td><input type="text" id="nummer" nummer="nummer" class="side"></td>
+                    </tr>
+                </table>
+                <label for="ämne">Ämne<br>
+                    <input type="text" id="ämne" ämne="ämne" placeholder="Fyll i ditt ämne här..."><br>
+                </label><br>
+                <label for="meddelande">Meddelande<br>
+                    <textarea id="meddelande" meddelande="meddelande" cols="30" rows="10"></textarea><br>
+                </label><br>
+                <input type="submit" id="Skicka">
+            </form>
+        </section>
+        <footer>
+            <h3 style="font-size: 20px;">
+                Flaxory
+            </h3>
+            <h3 style="font-size: 15px;">
+                Svensk Marknadsföring
+            </h3>
+        </footer>
     </body>
-<footer>
-    <h3 style="font-size: 20px;">
-        Flaxory
-    </h3>
-    <h3 style="font-size: 15px;">
-        Svensk Marknadsföring
-    </h3>
-</footer>
 </html>

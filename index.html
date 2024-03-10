@@ -10,9 +10,9 @@
       if (screen.width <= 1025) {
       document.location = "mobile.html";
       }
-      </script>
+    </script>
   </head>
-  <body style="font-size: 0;">
+  <body>
     <header>
       <a href="index.html" class="logo">
         <img src="img/logo.png" alt="Flaxory Logo">
@@ -37,7 +37,7 @@
         <div class="column">
           <img src="img/black-connect.jpeg">
           <div class="overlay">
-            <h2>FLAX BUSINESS</h2>
+            <h2 style="font-size: 2vw;">FLAX BUSINESS</h2>
             <p>Välkommen till Flaxory, där digital kreativitet möter effektiv <br>marknadsföring! 
               Vi är specialiserade på att skapa övertygande online-<br>marknadsföring som höjer synligheten och engagemanget för ditt 
               <br>varumärke bland din målgrupp. På Flaxory kombinerar vi innovativa 
@@ -45,7 +45,7 @@
               Vi är dedikerade till att förbättra ditt onlineintryck och hjälpa <br>
               ditt varumärke att sticka ut. Låt Flaxory vara den hemliga <br>
               ingrediensen för att nå framgång i den digitala världen!</p>
-            <button type="button" onclick="location.href='arbete.html'">Vårt Arbete</button>
+            <button type="button" class="vårt-arbete" onclick="location.href='arbete.html'">Vårt Arbete</button>
           </div>
         </div>
         <div class="column">
@@ -53,17 +53,42 @@
         </div>
       </div>
     </section>
-    <section>
-
-    </section>
+    <section style="background-color: rgb(12,12,13);" style="font-size: 0.6vw;">
+      <h1 class="kontakt">Kontakta oss</h1>
+      <form action="">
+          <label for="name">Namn*<br>
+              <input type="text" id="name" name="name" placeholder="Skriv ditt namn här..."¨ required>
+          </label><br>
+          <label for="adress">Adress <br>
+              <input type="text" id="adress" adress="adress" placeholder="Fyll i din adress..."><br>
+          </label>
+          <table>
+              <tr>
+                  <td><label for="epost" class="side">E-post*</label></td>
+                  <td><label for="nummer" class="side">Telefonnummer</label></td>
+              </tr>
+              <tr>
+                  <td><input type="text" id="epost" epost="epost" class="side" required> </td>
+                  <td><input type="text" id="nummer" nummer="nummer" class="side"></td>
+              </tr>
+          </table>
+          <label for="ämne">Ämne<br>
+              <input type="text" id="ämne" ämne="ämne" placeholder="Fyll i ditt ämne här..."><br>
+          </label><br>
+          <label for="meddelande">Meddelande<br>
+              <textarea id="meddelande" meddelande="meddelande" cols="30" rows="10"></textarea><br>
+          </label><br>
+          <input type="submit" id="Skicka">
+      </form>
+  </section>
+      <footer>
+          <h3 style="font-size: 20px;">
+              Flaxory
+          </h3>
+          <h3 style="font-size: 15px;">
+              Svensk Marknadsföring
+            </h3>
+      </footer>
   </body>
-  <footer>
-    <h3 style="font-size: 20px;">
-        Flaxory
-    </h3>
-    <h3 style="font-size: 15px;">
-        Svensk Marknadsföring
-</h3>
-</footer>
 </html>
 

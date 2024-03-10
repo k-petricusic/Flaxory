@@ -46,20 +46,19 @@ nav a {
 }
 
 h1 {
-    font-size: 6vw;
     color: white;
 }
 
 h2 {
-    font-size: 2vw;
-    color: rgb(255, 255, 255);
-    
+    color: rgb(255, 255, 255);  
 }
 
 h3 {
     color: white;
+    position: relative;
     display: flex;
     justify-content: center;
+    align-items: center;
     margin-top: 4%;
 }
 
@@ -72,6 +71,7 @@ section {
     display: block;
     position: relative;
     overflow-y: hidden;
+    margin-bottom: -4px;
 }
 
 section img {
@@ -131,9 +131,9 @@ section img {
     display: table;
 }
 
-button {
+.vårt-arbete {
     position: relative;
-    padding: 15px;
+    padding: 1.8%;
     background-color: rgba(0, 0,0,0);
     border: 2px;
     color: white;
@@ -147,12 +147,24 @@ button {
     font-size: 0.8vw;
 }
 
+.kontakta-oss {
+    position: relative;
+    padding: 1.8%;
+    background-color: rgb(221, 221, 221);
+    color: black;
+    border-style: groove;
+    border: 2px;
+    width: 13%;
+    height: 8%;
+    left: 29%;
+}
+
 button:hover {
     background-color: white;
     color: black;
 }
 
-section h1 {
+.priv {
     position: relative;
     left: 30%;
     padding-top: 7.5vh;
@@ -168,6 +180,7 @@ section pre {
 
 footer {
     padding-bottom: 5vh;
+    
 }
 
 a img {
@@ -196,3 +209,60 @@ a img {
     }
 }
 
+.kontakt {
+    left: 20%;
+    font-size: 2vw;
+    position: relative;
+    margin-top: 3%;
+}
+
+form {
+    position: relative;
+    float: right;
+    margin-bottom: 4%;
+    margin-right: 15%;
+}
+
+label {
+    color: white;
+}
+
+input{
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    margin-bottom: 4%;
+    font-size: 0.6vw;
+    width: 99%;
+    height: 4vh;
+    border-color: white;
+}
+
+textarea {
+    background-color: rgba(0,0,0,0.2);
+    color: white;
+    border-color: white;
+    width: 99.5%;
+}
+
+#Skicka {
+    background-color: rgb(221,221,221);
+    color: black;
+}
+
+#Skicka:hover {
+    background-color: white;
+    color: black;
+}
+
+.side {
+    width: 9.75vw;
+}
+
+table {
+    margin-bottom: 2%;
+}
+
+.arbete {
+    display: flex;
+    justify-content: center;
+}
