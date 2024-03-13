@@ -194,7 +194,8 @@ a img {
     }
 
     .logo img {
-        max-width: 80%;
+        max-width: 70%;
+        object-fit: cover;
     }
 }
 

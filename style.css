@@ -2,7 +2,6 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
 }
 
 body {
@@ -19,7 +18,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    overflow-x: auto;
+    padding-right: 7%;
 }
 
 a {
@@ -28,10 +27,10 @@ a {
 
 nav a {
     color: white;
-    font-size: 1vw; 
+    font-size: 140%; 
     text-decoration: none;
-    padding-left: 2vh;
-    padding-right: 2vh;
+    padding-left: 6%;
+    padding-right: 6%;
     white-space: nowrap;
 }
 
@@ -56,15 +55,19 @@ h2 {
 h3 {
     color: white;
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 4%;
 }
 
 p {
     color: white;
     font-size: 1.3vw;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4%;
+    margin-bottom: 4vh;
 }
 
 section {
@@ -92,7 +95,6 @@ section img {
 
 .img-txt {
     position: relative;
-    left: 5%;
 }
 
 .overlay h1 {
@@ -139,7 +141,7 @@ section img {
     color: white;
     border-style: groove;
     right: 40%;
-    top: 20%;
+    top: 28%;
     transition-duration: 0.5s;
     width: 10%;
     height: 10%;
@@ -154,33 +156,15 @@ section img {
     color: black;
     border-style: groove;
     border: 2px;
-    width: 13%;
-    height: 8%;
-    left: 29%;
+    width: 6vw;
+    height: 4vh;
+    margin-left: 24%;
+    font-size: 1vh;
 }
 
 button:hover {
     background-color: white;
     color: black;
-}
-
-.priv {
-    position: relative;
-    left: 30%;
-    padding-top: 7.5vh;
-}
-
-section pre {
-    position: relative;
-    left: 25%;
-    color: white;
-    line-height: 1.5em;
-    padding: 3vh;
-}
-
-footer {
-    padding-bottom: 5vh;
-    
 }
 
 a img {
@@ -210,30 +194,31 @@ a img {
 }
 
 .kontakt {
-    left: 20%;
-    font-size: 2vw;
-    position: relative;
-    margin-top: 3%;
+    font-size: 370%;
+    padding-top: 3%;
+    padding-left: 20%;
 }
 
 form {
     position: relative;
     float: right;
-    margin-bottom: 4%;
-    margin-right: 15%;
+
 }
 
 label {
     color: white;
+    font-size: 150%;
 }
 
 input{
     background-color: rgba(0,0,0,0.2);
     color: white;
     margin-bottom: 4%;
-    font-size: 0.6vw;
-    width: 99%;
-    height: 4vh;
+    font-size: 120%;
+    width: 97%;
+    max-width: 97%;
+    padding-top: 6%;
+    padding-bottom: 6%;
     border-color: white;
 }
 
@@ -241,7 +226,9 @@ textarea {
     background-color: rgba(0,0,0,0.2);
     color: white;
     border-color: white;
-    width: 99.5%;
+    width: 97%;
+    max-width: 97%;
+    font-size: 130%;
 }
 
 #Skicka {
@@ -254,9 +241,6 @@ textarea {
     color: black;
 }
 
-.side {
-    width: 9.75vw;
-}
 
 table {
     margin-bottom: 2%;
@@ -266,3 +250,8 @@ table {
     display: flex;
     justify-content: center;
 }
+
+td {
+    padding: 1%;
+}
+
