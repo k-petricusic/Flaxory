@@ -139,11 +139,9 @@ button {
     border: 2px;
     color: white;
     border-style: groove;
-    right: 40%;
-    top: 30%;
+    margin-right: 66%;
+    margin-top: 40%;
     transition-duration: 0.5s;
-    width: 10%;
-    height: 10%;
     overflow-y: hidden;
     font-size: 2.1vw;
     text-align: center;
@@ -199,3 +197,16 @@ a img {
     }
 }
 
+label {
+    color: white;
+    font-size: 150%;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    margin-left: 35%;
+    width: 30%;
+    height: 30%;
+    font-size: 100%;
+}
