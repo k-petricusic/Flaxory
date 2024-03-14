@@ -18,6 +18,34 @@
         <img src="img/mini-logo.png" alt="Flaxory Logo">
       </a>
     </header>
+
+    <div class="drop">¨
+      <button onclick="drop()" class="dropbtn"></button>
+      <div id="dropdown" class="drop-content">
+        <a href="mobile.html">Start</a>
+        <a href="mobile-arbete.html">Vårt Arbete</a>
+        <a href="mobile-kontakt.html">Kontakt</a>
+        <a href="mobile-privacy.html">Privacy Policy</a>
+      </div>
+    </div>
+    <script>
+      function drop() {
+        document.getElementById("dropdown").classList.toggle("show");
+      }
+
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbtn')) {
+          var dropdowns = document.getElementsByClassName("drop-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
     <section>
       <video width="300%" height="100%" autoplay muted loop>
         <source src="img/skog.mp4" type="video/mp4">
@@ -39,12 +67,12 @@
               Vi är dedikerade till att förbättra ditt onlineintryck och hjälpa
               ditt varumärke att sticka ut. Låt Flaxory vara den hemliga
               ingrediensen för att nå framgång i den digitala världen!</p>
-            <button type="button" onclick="location.href='arbete.html'">Vårt Arbete</button>
+            <button type="button" onclick="location.href='mobile-arbete.html'" id="arbete">Vårt Arbete</button>
           </div>
         </div>
       </div>
     </section>
-    <section style="background-color: rgb(12,12,13); font-size: 3vw;">
+    <section style="background-color: rgb(12,12,13); font-size: 3vw; overflow-x: hidden;">
       <h1 class="kontakt">Kontakta oss</h1>
       <form action="" style="width: 100%; height: auto;">
         <label for="namn">Namn*</label><br>
@@ -61,15 +89,14 @@
         <textarea id="meddelande" name="meddelande" cols="30" rows="7"></textarea><br>
         <div><input type="submit" id="Skicka" value="Skicka" style="display: block; margin: 5% auto;"></div>
      </form>
-  </section>
+    </section>
       <footer>
         <h3 style="font-size: 20px;">
             Flaxory
         </h3>
         <h3 style="font-size: 15px;">
             Svensk Marknadsföring
-      </h3>
+        </h3>
       </footer>
   </body>
 </html>
-
