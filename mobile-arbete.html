@@ -1,58 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style-mobile.css">
-        <title>Flaxory Marknadsföring</title>
-        <link rel="icon" href="img/mini.png" type="image/x-icon">
-        <script type="text/javascript">
-            if (screen.width >= 1026) {
-            document.location = "index.html";
-            }
-        </script>
-      </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style-mobile.css">
+    <title>Flaxory Marknadsföring</title>
+    <link rel="icon" href="img/mini.png" type="image/x-icon">
+    <script type="text/javascript">
+        if (screen.width >= 1026) {
+        document.location = "index.html";
+        }
+    </script>
+  </head>
 <body>
     <header>
         <a href="mobile.html" class="logo">
-          <img src="img/mini-logo.png" alt="Flaxory Logo">
+        <img src="img/mini-logo.png" alt="Flaxory Logo">
         </a>
-      </header>
-      <div class="drop">¨
-        <button onclick="drop()" class="dropbtn"></button>
-        <div id="dropdown" class="drop-content">
-          <a href="mobile.html">Start</a>
-          <a href="mobile-arbete.html">Vårt Arbete</a>
-          <a href="mobile-kontakt.html">Kontakt</a>
-          <a href="mobile-privacy.html">Privacy Policy</a>
-        </div>
-      </div>
-      <script>
-        function drop() {
-          document.getElementById("dropdown").classList.toggle("show");
-        }
+    </header>
+    <div class="drop">¨
+    <button onclick="drop()" class="dropbtn"></button>
+    <div id="dropdown" class="drop-content">
+        <a href="mobile.html">Start</a>
+        <a href="mobile-arbete.html">Vårt Arbete</a>
+        <a href="mobile-kontakt.html">Kontakt</a>
+        <a href="mobile-privacy.html">Privacy Policy</a>
+    </div>
+    </div>
+    <script>
+    function drop() {
+        document.getElementById("dropdown").classList.toggle("show");
+    }
   
-        window.onclick = function(event) {
-          if (!event.target.matches('.dropbtn')) {
-            var dropdowns = document.getElementsByClassName("drop-content");
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-              var openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-              }
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("drop-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
             }
           }
         }
-      </script>
-      
-    <footer>
-        <h3 style="font-size: 20px;">
+      }
+    </script>
+      <section style="background-color: rgb(12,12,13);">
+        <h1 class="arbete" style="font-size: 250%; left: 0; text-align: center; padding-top: 3.5vh; padding-bottom: 1.5vh;">Vårt Arbete</h1>
+        <h2 class="arbete" style="font-size: 150%; text-align: center; padding-bottom: 3.5vh;" >Med fokus på kvalitet</h2>
+        <img src="img/mobil.png" style="display: block;">
+      </section>
+      <section style="background-color: rgb(25,25,30);">
+        <table>
+            <tr>
+                <td><h3 style="font-size: 150%;">Vad Vi Gör</h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-size: 100%; line-height: 190%;">
+                    Välkommen till Flaxory, ditt valda marknadsföringsbyrå som 
+                    specialiserar sig på Facebook & TikTok annonsering. Vi är 
+                    dedikerade till att skapa skräddarsydda strategier som ökar 
+                    synligheten för ditt varumärke och ge konkreta resultat. Vårt team av 
+                    experter excellerar inom målgruppsinriktning, engagerande kreativitet 
+                    och kontinuerlig analys av prestanda, vilket säkerställer maximal 
+                    avkastning för mindre företag. Följ med oss på resan att förändra din 
+                    online-närvaro och uppnå en långvarig framgång.
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <table>
+            <tr>
+                <td><h3 style="font-size: 150%;">Processen</h3></td>
+            </tr>
+            <tr>
+                <td>
+                    <p style="font-size: 100%; line-height: 190%;">
+                    Vi bokar ett 30-minuters Teams-möte med dig där vi 
+                    analyserar och går igenom din nuvarande 
+                    marknadssituation. Sedan når vi en överenskommelse, och en till två veckor senare kommer vi att ge dig en 
+                    skräddarsydd marknadsföringskampanj för ditt gym. 
+        
+                    Om du är intresserad, tryck på knappen nedan och fyll i 
+                    uppgifterna, vi kommer att svara inom 24 timmar.
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <button type="button" class="kontakta-oss" onclick="location.href='mobile-kontakt.html'" >Kontakta oss</button>
+      </section>
+      <footer>
+        <h3 class="footer" style="font-size: 20px;">
             Flaxory
         </h3>
-        <h3 style="font-size: 15px;">
+        <h3 class="footer" style="font-size: 15px;">
             Svensk Marknadsföring
         </h3>
       </footer>
 </body>
 </html>
+
