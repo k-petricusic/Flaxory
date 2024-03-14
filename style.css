@@ -95,6 +95,7 @@ section img {
 
 .img-txt {
     position: relative;
+    animation: fadeIn 2.5s;
 }
 
 .overlay h1 {
@@ -133,21 +134,6 @@ section img {
     display: table;
 }
 
-.vårt-arbete {
-    position: relative;
-    padding: 1.8%;
-    background-color: rgba(0, 0,0,0);
-    border: 2px;
-    color: white;
-    border-style: groove;
-    right: 40%;
-    top: 28%;
-    transition-duration: 0.5s;
-    width: 10%;
-    height: 10%;
-    overflow-y: hidden;
-    font-size: 0.8vw;
-}
 
 .kontakta-oss {
     position: relative;
@@ -254,3 +240,60 @@ td {
     padding: 1%;
 }
 
+@keyframes slideLeft{
+    from {
+        transform: translateX(-100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight{
+    from {
+        transform: translateX(100px);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+.slideLeft {
+    animation: slideLeft 1s;
+}
+
+.slideRight {
+    animation: slideRight 1s;
+}
+
+.vårt-arbete {
+    position: relative;
+    padding: 1.8%;
+    background-color: rgba(0, 0,0,0);
+    border: 2px;
+    color: white;
+    border-style: groove;
+    right: 40%;
+    top: 28%;
+    transition-duration: 0.5s;
+    width: 10%;
+    overflow-y: hidden;
+    font-size: 0.8vw;
+    animation: slideLeft 1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 2.5s;
+}
