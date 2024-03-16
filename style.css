@@ -11,7 +11,6 @@ body {
 header {
     background-color: black;
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
@@ -29,7 +28,6 @@ nav a {
     font-size: 140%; 
     text-decoration: none;
     padding-right: 9%;
-    white-space: nowrap;
 }
 
 .logo {
