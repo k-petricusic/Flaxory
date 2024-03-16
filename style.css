@@ -18,7 +18,7 @@ header {
 nav {
     display: flex;
     align-items: center;
-    margin-right: 5%;
+    margin-right: 7%;
 }
 
 a {
@@ -27,7 +27,7 @@ a {
 
 nav a {
     color: white;
-    font-size: 140%; 
+    font-size: 1.2vw; 
     text-decoration: none;
     padding-right: 9%;
     white-space: nowrap;
