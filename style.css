@@ -4,10 +4,6 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-section {
-    overflow-x: hidden;
-}
-
 body {
     background-color: rgb(0, 0, 0);
 }
@@ -15,14 +11,13 @@ body {
 header {
     background-color: black;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 nav {
     display: flex;
     align-items: center;
-    margin-right: 7%;
 }
 
 a {
