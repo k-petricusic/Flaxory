@@ -11,12 +11,15 @@ body {
 header {
     background-color: black;
     display: flex;
+    justify-content: space-between;
     align-items: center;
 }
 
 nav {
     display: flex;
     align-items: center;
+    margin-right: 5%;
+    min-width: 0;
 }
 
 a {
@@ -28,6 +31,7 @@ nav a {
     font-size: 140%; 
     text-decoration: none;
     padding-right: 9%;
+    white-space: nowrap;
 }
 
 .logo {
