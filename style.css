@@ -16,10 +16,8 @@ header {
 }
 
 nav {
-    display: flex;
     align-items: center;
-    margin-right: 5%;
-    min-width: 0;
+
 }
 
 a {
