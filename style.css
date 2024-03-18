@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -158,6 +159,7 @@ section img {
 button:hover {
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 
 a img {
@@ -187,8 +189,8 @@ a img {
 }
 
 .kontakt {
-    font-size: 370%;
-    padding-top: 3%;
+    font-size: 3vw;
+    padding-top: 5%;
     padding-left: 20%;
 }
 
@@ -199,14 +201,14 @@ form {
 
 label {
     color: white;
-    font-size: 150%;
+    font-size: 1.2vw;
 }
 
 input{
     background-color: rgba(0,0,0,0.2);
     color: white;
     margin-bottom: 4%;
-    font-size: 120%;
+    font-size: 0.8vw;
     width: 97%;
     max-height: 10%;
     max-width: 97%;
@@ -220,17 +222,18 @@ textarea {
     border-color: white;
     width: 97%;
     max-width: 97%;
-    font-size: 130%;
+    font-size: 0.8vw;
 }
 
 #Skicka {
-    background-color: rgb(221,221,221);
+    background-color: white;
     color: black;
 }
 
 #Skicka:hover {
     background-color: white;
     color: black;
+    cursor: pointer;
 }
 
 table {
@@ -281,12 +284,12 @@ td {
     border: 2px;
     color: white;
     border-style: groove;
-    right: 40%;
+    right: 37.5%;
     top: 28%;
     transition-duration: 0.5s;
-    width: 10%;
+    width: 15%;
     overflow-y: hidden;
-    font-size: 0.8vw;
+    font-size: 1.2vw;
     animation: slideLeft 1s;
 }
 
@@ -307,7 +310,8 @@ td {
 .ad-text {
     text-align: center;
     padding-bottom: 1%;
-    font-size: 1.2vw;
+    font-size: 2.5vw;
+    display: block;
 }
 
 .ad-img {
@@ -321,7 +325,7 @@ td {
  }
 
  .ad-li {
-    font-size: 1.1vw;
+    font-size: 1.5vw;
  }
 
  .tjänster-li {
@@ -391,10 +395,112 @@ td {
 }
 
  .mailSlide {
-    animation: mailSlide 1.5s linear infinite,
-    delay 3s linear infinite;
+    animation: mailSlide 1s linear infinite,
+    delay 2s linear infinite;
  }
 
  .mailBoxPop {
-    animation: mailBoxPop 3s linear infinite;
+    animation: mailBoxPop 2s linear infinite;
+    box-sizing: content-box;
  }
+
+ #fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: rgb(0, 0, 0);
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+ }
+
+ @keyframes fade-out {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+ }
+
+ @keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+ }
+
+ #fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+ }
+
+ #fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+ }
+
+.slideshow {
+    max-width: 20%;
+    position: relative;
+    margin: auto;
+}
+
+.imgSlide {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -2%;
+    padding: 3%;
+    color: white;
+    font-weight: bold;
+    font-size: 1vw;
+    transition: 0.6s ease;
+    border-radius: 0 3% 3% 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3% 0 0 3%;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: 0.4;}
+    to {opacity: 1;}
+}

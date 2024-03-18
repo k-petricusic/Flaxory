@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
     <title>Flaxory Marknadsföring</title>
     <link rel="icon" href="img/mini.png" type="image/x-icon">
     <script type="text/javascript">
@@ -13,6 +14,8 @@
     </script>
 </head>
 <body>
+  <svg id="fader"></svg>
+  <script>fadeInPage();</script>
     <header>
         <a href="index.html" class="logo">
           <img src="img/logo.png" alt="Flaxory Logo">
@@ -24,6 +27,7 @@
           <a href="privacy.html">Privacy Policy</a>
         </nav>
       </header>
+      <hr>
       <section style="background-color: rgb(10,10,11);">
         <h1 style="text-align: center; padding: 3% 0; font-size: 3vw;">Våra Tjänster</h1>
         <div style="display: flex; justify-content: center; padding-bottom: 5%;">
@@ -41,12 +45,31 @@
           </ul>
         </div>
       </section>
+      <h1 style="background-image: linear-gradient(rgba(10,10,11), rgb(25,25,30)); color: rgba(0,0,0,0);">.</h1>
       <section>
         <div class="row" style="background-color: rgb(25,25,30);">
           <h2 class="ad-text" style="padding-top: 2%;">Få Reklamer anpassat för ditt gym</h2>
           <h3 class="ad-text" style="padding-bottom: 2%;">Reklam exempel</h3>
-          <img src="img/träning-ad.png" class="ad-img" style="width: 15%;">
-          <h4 class="ad-text" style="padding-bottom: 2%; font-size: 1.4vw;">Vad gör våra reklamer bra?</h4>
+          <div class="slideshow">
+            <div class="imgSlide fade" style="display: block;">
+              <img src="img/träning-ad3.png">
+            </div>
+            <div class="imgSlide fade">
+              <img src="img/träning-ad2.png">
+            </div>
+            <div class="imgSlide fade">
+              <img src="img/träning-ad.png">
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          <div style="text-align: center; padding-bottom: 2%;">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          <h4 class="ad-text" style="padding-bottom: 2%; font-size: 2vw;">Vad gör våra reklamer bra?</h4>
           <ul style="display: flex; flex-direction: column; align-items: center; margin-bottom: 2%;">
             <div>
               <li class="ad-li">Reklamen är skarp - Det gör reklamen lätt förståelig, tydlig & utstickande.</li>
@@ -58,16 +81,17 @@
           </ul>
         </div>
       </section>
+      <h1 style="background-image: linear-gradient(rgba(25,25,30), rgb(10,10,11)); color: rgba(0,0,0,0);">.</h1>
       <section>
         <div class="row" style="background-color: rgb(10,10,11);">
           <div class="column">
             <table style="width: 100%;">
               <tr>
-                <td><h3 style="margin-top: 5%; margin-left: 10%; font-size: 1.6vw;">Design</h3></td>
+                <td><h3 style="margin-top: 5%; margin-left: 10%; font-size: 2vw;">Design</h3></td>
               </tr>
               <tr>
                 <td>
-                  <p style="font-size: 1.1vw; margin-left: 10%; margin-bottom: 5%;">
+                  <p style="font-size: 1.3vw; margin-left: 10%; margin-bottom: 5%;">
                     En bra webbplats för ett gym är avgörande för att locka och behålla <br>
                     medlemmar. Den ger en professionell image, marknadsföringsmöjligheter, <br>
                     underlättar försäljningsprocessen och erbjuder viktig information om <br>
@@ -80,10 +104,12 @@
             </table>
           </div>
           <div class="column">
-            <img src="img/logo-trans.png" style="padding-top: 5%; padding-bottom: 5%; width: 100%; display: block; margin-left: auto; margin-right: auto;">
-            <h3 style="text-align: center; font-size: 2.5vw; padding-left: 13%;">Hemsida Design</h3>
+            <img src="img/logo-trans.png" style="padding-top: 5%; width: 100%; display: block; margin-left: auto; margin-right: auto;">
+            <hr style="width: 47%; margin-left: 36%">
+            <h3 style="text-align: center; font-size: 2.8vw; padding-left: 18%; padding-top: 2%;">Hemsida Design</h3>
           </div>
         </div>
+        <hr>
       </section>
       <footer>
         <h3 class="footer" style="font-size: 1vw; text-align: center;">
@@ -93,7 +119,7 @@
           <ul style="list-style: none; width: 100%; text-align: center;">
             <li class="footer-nav"><a href="index.html">Start</a></li>
             <li class="footer-nav"><a href="arbete.html">Arbete</a></li>
-            <li class="footer-nav"><a href="kontakt.html">Konatakt</a></li>
+            <li class="footer-nav"><a href="kontakt.html">Kontakt</a></li>
             <li class="footer-nav"><a href="privacy.html">Privacy Policy</a></li>
           </ul>
         </nav>
