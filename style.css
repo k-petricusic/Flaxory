@@ -320,21 +320,22 @@ td {
     margin-left: auto;
     margin-right: auto;
 }
- ul {
-    color: white;
- }
 
- .ad-li {
+ul {
+    color: white;
+}
+
+.ad-li {
     font-size: 1.5vw;
- }
+}
 
- .tjänster-li {
+.tjänster-li {
     font-size: 2vw;
- }
+}
 
- span {
+span {
     color: white;
- }
+}
 
  @keyframes mailSlide {
     20% {

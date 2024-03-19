@@ -3,33 +3,51 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-mobile.css">
     <script src="main.js"></script>
     <title>Flaxory Marknadsföring</title>
     <link rel="icon" href="img/mini.png" type="image/x-icon">
     <script type="text/javascript">
-      if (screen.width <= 1025) {
-      document.location = "mobile.html";
-      }
+        if (screen.width >= 1026) {
+        document.location = "index.html";
+        }
     </script>
 </head>
 <body>
-  <svg id="fader"></svg>
-  <script>fadeInPage();</script>
     <header>
-        <a href="index.html" class="logo">
-          <img src="img/logo.png" alt="Flaxory Logo">
+        <a href="mobile.html" class="logo">
+        <img src="img/mini-logo.png" alt="Flaxory Logo">
         </a>
-        <nav>
-          <a href="index.html">Start</a>
-          <a href="arbete.html">Arbete</a>
-          <a href="kontakt.html">Kontakt</a>
-          <a href="privacy.html">Privacy Policy</a>
-        </nav>
-      </header>
-      <hr>
+    </header>
+    <div class="drop">¨
+    <button onclick="drop()" class="dropbtn"></button>
+    <div id="dropdown" class="drop-content">
+        <a href="mobile.html">Start</a>
+        <a href="mobile-arbete.html">Vårt Arbete</a>
+        <a href="mobile-kontakt.html">Kontakt</a>
+        <a href="mobile-privacy.html">Privacy Policy</a>
+    </div>
+    </div>
+    <script>
+    function drop() {
+        document.getElementById("dropdown").classList.toggle("show");
+    }
+  
+    window.onclick = function(event) {
+       if (!event.target.matches('.dropbtn')) {
+        var dropdowns = document.getElementsByClassName("drop-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+            openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }
+    </script>
       <section style="background-color: rgb(10,10,11);">
-        <h1 style="text-align: center; padding: 3% 0; font-size: 3vw;">Våra Tjänster</h1>
+        <h1 style="text-align: center; padding: 3% 0; font-size: 6vw; left: 0;">Våra Tjänster</h1>
         <div style="display: flex; justify-content: center; padding-bottom: 5%;">
           <ul style="padding-right: 3%;">
             <li class="tjänster-li">Facebook</li>
@@ -64,12 +82,12 @@
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
           <br>
-          <div style="text-align: center; padding-bottom: 2%;">
+          <div style="text-align: center; padding-bottom: 6%;">
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
             <span class="dot" onclick="currentSlide(3)"></span>
           </div>
-          <h4 class="ad-text" style="padding-bottom: 2%; font-size: 2vw;">Vad gör våra reklamer bra?</h4>
+          <h4 class="ad-text" style="padding-bottom: 5%; font-size: 4vw;">Vad gör våra reklamer bra?</h4>
           <ul style="display: flex; flex-direction: column; align-items: center; margin-bottom: 2%;">
             <div>
               <li class="ad-li">Reklamen är skarp - Det gör reklamen lätt förståelig, tydlig & utstickande.</li>
@@ -83,15 +101,20 @@
       </section>
       <h1 style="background-image: linear-gradient(rgba(25,25,30), rgb(10,10,11)); color: rgba(0,0,0,0);">.</h1>
       <section>
+        <div class="column">
+            <img src="img/logo-trans.png" style="padding-top: 7%; width: 100%; display: block; margin-left: auto; margin-right: auto;">
+            <hr style="width: 47%; margin-left: 36%">
+            <h3 style="text-align: center; font-size: 6vw; padding-left: 18%; padding-top: 2%;">Hemsida Design</h3>
+          </div>
         <div class="row" style="background-color: rgb(10,10,11);">
           <div class="column">
             <table style="width: 100%;">
               <tr>
-                <td><h3 style="margin-top: 5%; margin-left: 10%; font-size: 2vw;">Design</h3></td>
+                <td><h3 style="margin-top: 5%; margin-left: 10%; font-size: 4vw;">Design</h3></td>
               </tr>
               <tr>
                 <td>
-                  <p style="font-size: 1.3vw; margin-left: 10%; margin-bottom: 5%;">
+                  <p style="font-size: 2vw; margin-left: 10%; margin-bottom: 5%;">
                     En bra webbplats för ett gym är avgörande för att locka och behålla <br>
                     medlemmar. Den ger en professionell image, marknadsföringsmöjligheter, <br>
                     underlättar försäljningsprocessen och erbjuder viktig information om <br>
@@ -103,26 +126,17 @@
               </tr>
             </table>
           </div>
-          <div class="column">
-            <img src="img/logo-trans.png" style="padding-top: 5%; width: 100%; display: block; margin-left: auto; margin-right: auto;">
-            <hr style="width: 47%; margin-left: 36%">
-            <h3 style="text-align: center; font-size: 2.8vw; padding-left: 18%; padding-top: 2%;">Hemsida Design</h3>
-          </div>
+
         </div>
         <hr>
       </section>
       <footer>
-        <h3 class="footer" style="font-size: 1vw; text-align: center;">
-            Flaxory <br> <br> Svensk Marknadsföring
+        <h3 class="footer" style="font-size: 20px;">
+            Flaxory
         </h3>
-        <nav style="display:block; margin-right: 0; padding-bottom: 3%;">
-          <ul style="list-style: none; width: 100%; text-align: center;">
-            <li class="footer-nav"><a href="index.html">Start</a></li>
-            <li class="footer-nav"><a href="arbete.html">Arbete</a></li>
-            <li class="footer-nav"><a href="kontakt.html">Kontakt</a></li>
-            <li class="footer-nav"><a href="privacy.html">Privacy Policy</a></li>
-          </ul>
-        </nav>
-    </footer>
+        <h3 class="footer" style="font-size: 15px;">
+            Svensk Marknadsföring
+        </h3>
+      </footer>
 </body>
 </html>
