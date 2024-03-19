@@ -5,6 +5,14 @@
     box-sizing: border-box;
 }
 
+img {
+    pointer-events: none;
+}
+
+video {
+    pointer-events: none;
+}
+
 body {
     background-color: rgb(0, 0, 0);
 }
